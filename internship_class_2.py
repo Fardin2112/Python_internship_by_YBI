@@ -13,3 +13,30 @@ print(data)
 print(data.head())
 print(data.info())
 print(data.describe())
+
+# for shape
+print(data.shape)
+
+# display column label
+print(data.columns)
+
+# select a column as a series
+print(data['sex'])
+print(data.shape)
+
+# select a column as a dataframe
+print(data[['sex']])
+
+#unique category in a column
+print(data['sex'].unique())
+
+#number of unique category in a column
+print(data['sex'].nunique())
+
+#categories wise number in a column
+print(data['sex'].value_counts())
+
+# count of missing value
+print(data.isna().sum())
+print(data.isnull().sum())
+
